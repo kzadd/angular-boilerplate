@@ -56,7 +56,7 @@
             "inlineStyleLanguage": "scss",
             "outputPath": "dist/boilerplate",
             "polyfills": [],
-            "scripts": [],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
             "styles": ["src/app/shared/styles/globals.scss"],
             "tsConfig": "tsconfig.app.json"
           }
