@@ -1,3 +1,5 @@
+/// <reference types="@angular/localize" />
+
 import { bootstrapApplication } from '@angular/platform-browser'
 
 import { initializeMockServiceWorker } from './app/__mocks__/initialize'

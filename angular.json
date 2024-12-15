@@ -55,8 +55,8 @@
             "index": "src/index.html",
             "inlineStyleLanguage": "scss",
             "outputPath": "dist/boilerplate",
-            "polyfills": [],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
+            "polyfills": ["@angular/localize/init"],
+            "scripts": [],
             "styles": ["src/app/shared/styles/globals.scss"],
             "tsConfig": "tsconfig.app.json"
           }
@@ -95,7 +95,7 @@
               }
             ],
             "inlineStyleLanguage": "scss",
-            "polyfills": [],
+            "polyfills": ["@angular/localize/init"],
             "scripts": [],
             "styles": ["src/app/shared/styles/globals.scss"],
             "tsConfig": "tsconfig.spec.json"
