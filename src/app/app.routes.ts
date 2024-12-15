@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router'
 
-import { routes as routestPath } from './shared/constants/routes.constant'
+import { routePaths } from './shared/constants/routes.constant'
 
 const CharactersPage = () => import('./presentation/pages/character-page.component').then(m => m.CharacterPageComponent)
 const NotFoundPage = () => import('./presentation/pages/not-found-page.component').then(m => m.NotFoundPageComponent)
@@ -11,16 +11,16 @@ const NotFoundPage = () => import('./presentation/pages/not-found-page.component
  */
 export const routes: Routes = [
   {
-    path: routestPath.root,
+    path: routePaths.root,
     pathMatch: 'full',
-    redirectTo: routestPath.characters
+    redirectTo: routePaths.characters
   },
   {
     loadComponent: CharactersPage,
-    path: routestPath.characters
+    path: routePaths.characters
   },
   {
     loadComponent: NotFoundPage,
-    path: routestPath.notFound
+    path: routePaths.notFound
   }
 ]
